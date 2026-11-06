@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Guía interactiva de repaso de Matemáticas y Física para grados décimo y undécimo.">
+<title>Guía de repaso | Matemáticas y Física · 10.º y 11.º</title>
+<style>
+:root{--navy:#14213d;--blue:#2457a7;--cyan:#dceeff;--gold:#f2b84b;--ink:#243047;--muted:#64748b;--paper:#fff;--bg:#f3f6fb;--line:#dce3ee;--green:#17834a;--red:#bd3434;--shadow:0 10px 30px #14213d12}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:linear-gradient(125deg,#14213d,#2457a7 72%,#347cb7);color:white;padding:56px 22px 48px}
+.hero{max-width:1120px;margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;color:#ffda8a}
+h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:.45rem 0 1rem;max-width:800px}
+header p{max-width:760px;color:#e4edff;font-size:1.08rem}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid #ffffff66;border-radius:999px;padding:5px 12px;font-size:.86rem}
+.layout{max-width:1200px;margin:28px auto;padding:0 18px;display:grid;grid-template-columns:255px minmax(0,1fr);gap:24px}
+nav{position:sticky;top:16px;align-self:start;background:white;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);max-height:calc(100vh - 32px);overflow:auto}
+nav strong{display:block;color:var(--navy);margin-bottom:10px}nav a{display:block;text-decoration:none;color:#43516a;padding:6px 8px;border-radius:8px;font-size:.92rem}nav a:hover{background:var(--cyan);color:var(--blue)}
+main{min-width:0}.intro,.topic,.activity,.checkpanel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:clamp(18px,3vw,30px);margin-bottom:22px;box-shadow:var(--shadow)}
+h2{font-size:1.7rem;line-height:1.2;color:var(--navy);margin:0 0 16px}h3{color:var(--blue);margin:24px 0 8px;font-size:1.17rem}h4{margin:12px 0 6px;color:var(--navy)}
+.kicker{color:var(--blue);font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+p{margin:8px 0 12px}ul,ol{padding-left:24px}li{margin:5px 0}
+.formula{background:#f1f6ff;border-left:4px solid var(--blue);padding:12px 16px;margin:12px 0;border-radius:8px;overflow-x:auto;font-family:Cambria,Georgia,serif;font-size:1.08rem}
+.example{background:#f7fafc;border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0}.answer{font-weight:800;color:var(--green)}
+.visual{margin:18px 0;padding:12px;background:linear-gradient(135deg,#f7fbff,#eef4ff);border-radius:14px;text-align:center}.visual svg{width:100%;max-width:650px;height:auto;max-height:260px}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.95rem}th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}th{background:#edf3fc;color:var(--navy)}
+.exercise{background:#fbfcfe;border:1px solid var(--line);padding:13px 16px;border-radius:10px;margin:8px 0}
+.exercise ol{margin:6px 0}.note{color:var(--muted);font-size:.92rem}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 13px;margin:10px 0;background:#fff}summary{font-weight:700;color:var(--blue);cursor:pointer}
+button{border:0;border-radius:10px;background:var(--blue);color:white;padding:10px 16px;font-weight:700;cursor:pointer;font:inherit}button:hover{filter:brightness(1.08)}button.secondary{background:#e8eef8;color:var(--navy)}button:disabled{opacity:.45;cursor:not-allowed}
+.quiz-q{padding:14px 0;border-bottom:1px solid var(--line)}.quiz-q label{display:block;margin:7px 0;cursor:pointer}.feedback{padding:10px;border-radius:9px;margin-top:8px;background:#f0f7f2}.wrong{background:#fff1f1}
+.progress{height:10px;background:#e6ebf2;border-radius:99px;overflow:hidden}.progress span{display:block;height:100%;background:#17834a;width:0;transition:width .2s}
+.checkrow{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px solid #edf0f5}.checkrow input{margin-top:6px;accent-color:var(--green)}
+footer{text-align:center;color:var(--muted);padding:28px 15px}
+@media(max-width:850px){.layout{grid-template-columns:1fr}nav{position:relative;top:auto;max-height:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px}nav strong{grid-column:1/-1}}
+@media(max-width:520px){header{padding:38px 18px}.layout{padding:0 10px;margin:14px auto}nav{grid-template-columns:1fr}.topic,.intro,.activity,.checkpanel{padding:17px}table{font-size:.85rem}th,td{padding:7px}}
+@media print{body{background:white}.layout{display:block}nav,button{display:none!important}.topic,.intro{box-shadow:none;break-inside:avoid}header{background:#14213d!important;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<header>
+ <div class="hero">
+  <div class="eyebrow">Material de preparación · Evaluación final</div>
+  <h1>Guía integral de repaso<br>Matemáticas y Física</h1>
+  <p>Grados décimo y undécimo. Repasa conceptos, comprende ejemplos resueltos, practica y comprueba tus aprendizajes con actividades interactivas.</p>
+  <div class="chips"><span class="chip">6 temas de Matemáticas</span><span class="chip">4 temas de Física</span><span class="chip">50 ejercicios</span><span class="chip">Actividades interactivas</span></div>
+ </div>
+</header>
+<div class="layout">
+<nav aria-label="Índice de contenidos">
+ <strong>Contenido de la guía</strong>
+ <a href="#inicio">Cómo usar la guía</a>
+ <a href="#trig">1. Trigonometría</a><a href="#funciones">2. Funciones</a>
+ <a href="#logica">3. Lógica y conjuntos</a><a href="#limites">4. Límites</a>
+ <a href="#derivadas">5. Derivadas</a><a href="#estadistica">6. Estadística</a>
+ <a href="#movimiento">7. Movimiento</a><a href="#newton">8. Leyes de Newton</a>
+ <a href="#mas">9. Movimiento armónico simple</a><a href="#termo">10. Termodinámica</a>
+ <a href="#interactiva">Desafío interactivo</a><a href="#laboratorio">Laboratorio virtual</a>
+ <a href="#integradores">Retos integradores</a><a href="#autoevaluacion">Autoevaluación</a>
+</nav>
+<main>
+<section class="intro" id="inicio">
+ <div class="kicker">Antes de comenzar</div><h2>¿Cómo trabajar con esta guía?</h2>
+ <p>En cada tema encontrarás conceptos fundamentales, fórmulas, una representación visual, un ejemplo explicado y cinco ejercicios para practicar. Resuelve primero por tu cuenta y después revisa tus procedimientos.</p>
+ <ul><li>Escribe los datos y la incógnita antes de operar.</li><li>Selecciona la fórmula adecuada y muestra el procedimiento.</li><li>En Física, expresa siempre las unidades.</li><li>Interpreta el resultado: explica qué significa en la situación planteada.</li></ul>
+</section>
+
+<section class="topic" id="trig">
+ <div class="kicker">Matemáticas · Tema 1</div><h2>Trigonometría básica</h2>
+ <p>La trigonometría estudia las relaciones entre los lados y los ángulos de los triángulos. En un triángulo rectángulo, la <b>hipotenusa</b> es el lado opuesto al ángulo recto; el <b>cateto opuesto</b> queda frente al ángulo de referencia y el <b>cateto adyacente</b> está junto a él.</p>
+ <div class="visual"><svg viewBox="0 0 560 230" role="img" aria-label="Triángulo rectángulo con cateto opuesto, adyacente e hipotenusa"><path d="M100 185 L420 185 L420 35 Z" fill="#dceeff" stroke="#2457a7" stroke-width="4"/><path d="M400 185 L400 165 L420 165" fill="none" stroke="#14213d" stroke-width="2"/><path d="M145 185 Q150 160 173 151" fill="none" stroke="#d49b24" stroke-width="3"/><text x="245" y="211" fill="#14213d" font-size="16">Cateto adyacente</text><text x="432" y="113" fill="#14213d" font-size="15">Opuesto</text><text x="230" y="93" fill="#14213d" font-size="16" transform="rotate(-25 230 93)">Hipotenusa</text><text x="155" y="176" fill="#a56b00" font-size="16">θ</text></svg></div>
+ <h3>Razones trigonométricas</h3>
+ <div class="formula">sen(θ) = cateto opuesto / hipotenusa<br>cos(θ) = cateto adyacente / hipotenusa<br>tan(θ) = cateto opuesto / cateto adyacente</div>
+ <p>Una ayuda para recordarlas es SOH–CAH–TOA. El teorema de Pitágoras establece:</p><div class="formula">a² + b² = c²</div>
+ <h3>Ángulos notables</h3>
+ <table><tr><th>Ángulo</th><th>Seno</th><th>Coseno</th><th>Tangente</th></tr><tr><td>0°</td><td>0</td><td>1</td><td>0</td></tr><tr><td>30°</td><td>1/2</td><td>√3/2</td><td>√3/3</td></tr><tr><td>45°</td><td>√2/2</td><td>√2/2</td><td>1</td></tr><tr><td>60°</td><td>√3/2</td><td>1/2</td><td>√3</td></tr><tr><td>90°</td><td>1</td><td>0</td><td>No definida</td></tr></table>
+ <div class="example"><b>Ejemplo resuelto.</b> Una escalera de 5 m está apoyada contra una pared. Su base está a 3 m de la pared. ¿A qué altura llega?<ol><li>Hipotenusa = 5 m; cateto horizontal = 3 m; altura = h.</li><li>Por Pitágoras: h² + 3² = 5².</li><li>h² = 25 − 9 = 16; por tanto, <span class="answer">h = 4 m</span>.</li></ol></div>
+ <div class="exercise"><b>Practica: resuelve los cinco ejercicios.</b><ol><li>Calcula la hipotenusa de un triángulo cuyos catetos miden 6 cm y 8 cm.</li><li>Si el cateto opuesto mide 5 cm y la hipotenusa 13 cm, calcula el seno del ángulo.</li><li>Una rampa tiene 10 m de longitud y forma un ángulo de 30° con el suelo. ¿Qué altura alcanza?</li><li>Calcula sen 45° + cos 45°.</li><li>Desde un punto a 20 m de un edificio se observa su parte superior con un ángulo de elevación de 45°. ¿Cuál es la altura del edificio? Supón que el observador está a nivel del suelo.</li></ol></div>
+</section>
+
+<section class="topic" id="funciones">
+ <div class="kicker">Matemáticas · Tema 2</div><h2>Funciones</h2>
+ <p>Una función es una relación que asigna a cada elemento del dominio exactamente un valor de salida. Se representa como <b>f(x) = y</b>. El dominio reúne los valores de entrada permitidos; el rango contiene los valores de salida que efectivamente toma la función.</p>
+ <div class="visual"><svg viewBox="0 0 560 230" role="img" aria-label="Gráficas de funciones lineal y cuadrática"><path d="M40 185 H520 M90 210 V20" stroke="#64748b" stroke-width="2"/><path d="M80 185 L450 35" stroke="#2457a7" stroke-width="4" fill="none"/><path d="M170 45 Q280 270 390 45" stroke="#d49b24" stroke-width="4" fill="none"/><text x="455" y="28" fill="#2457a7" font-size="14">Lineal</text><text x="395" y="70" fill="#a56b00" font-size="14">Cuadrática</text><text x="525" y="202" fill="#14213d" font-size="13">x</text><text x="72" y="18" fill="#14213d" font-size="13">y</text></svg></div>
+ <h3>Tipos de funciones</h3><table><tr><th>Tipo</th><th>Expresión general</th><th>Característica</th></tr><tr><td>Constante</td><td>f(x) = c</td><td>Recta horizontal</td></tr><tr><td>Lineal</td><td>f(x) = mx</td><td>Pasa por el origen</td></tr><tr><td>Afín</td><td>f(x) = mx + b</td><td>Intercepto b</td></tr><tr><td>Cuadrática</td><td>f(x) = ax² + bx + c</td><td>Parábola</td></tr><tr><td>Exponencial</td><td>f(x) = aˣ</td><td>Variable en el exponente</td></tr></table>
+ <p>En una función afín, la pendiente m indica el cambio de y por cada unidad que aumenta x; b es el corte con el eje vertical.</p>
+ <div class="example"><b>Ejemplo resuelto.</b> Una empresa cobra $5.000 por el servicio y $2.000 por cada kilómetro. ¿Cuánto cuesta recorrer 8 km?<ol><li>x representa los kilómetros y f(x) el costo.</li><li>La función es f(x) = 2000x + 5000.</li><li>f(8) = 2000(8) + 5000 = <span class="answer">$21.000</span>.</li></ol></div>
+ <div class="exercise"><b>Practica.</b><ol><li>Determina el dominio y rango de f(x) = 2x + 3, considerando dominio real.</li><li>Calcula f(4) si f(x) = 3x² − 2x + 1.</li><li>Identifica la pendiente y el intercepto de f(x) = 5x − 7.</li><li>Una población se duplica cada hora. Si inicialmente hay 100 bacterias, construye una función exponencial y calcula la población después de 4 horas.</li><li>Determina las raíces de f(x) = x² − 5x + 6.</li></ol></div>
+</section>
+
+<section class="topic" id="logica">
+ <div class="kicker">Matemáticas · Tema 3</div><h2>Lógica y teoría de conjuntos</h2>
+ <p>La lógica matemática estudia los razonamientos. Una proposición es un enunciado declarativo que puede ser verdadero (V) o falso (F). Por ejemplo: “8 es par” es verdadera; “15 es primo” es falsa.</p>
+ <h3>Conectores y tabla de verdad</h3><table><tr><th>Conector</th><th>Símbolo</th><th>Significado</th></tr><tr><td>Negación</td><td>¬p</td><td>No p</td></tr><tr><td>Conjunción</td><td>p ∧ q</td><td>p y q</td></tr><tr><td>Disyunción</td><td>p ∨ q</td><td>p o q</td></tr><tr><td>Condicional</td><td>p → q</td><td>Si p, entonces q</td></tr><tr><td>Bicondicional</td><td>p ↔ q</td><td>p si y solo si q</td></tr></table>
+ <table><tr><th>p</th><th>q</th><th>p ∧ q</th><th>p ∨ q</th><th>p → q</th></tr><tr><td>V</td><td>V</td><td>V</td><td>V</td><td>V</td></tr><tr><td>V</td><td>F</td><td>F</td><td>V</td><td>F</td></tr><tr><td>F</td><td>V</td><td>F</td><td>V</td><td>V</td></tr><tr><td>F</td><td>F</td><td>F</td><td>F</td><td>V</td></tr></table>
+ <h3>Operaciones entre conjuntos</h3><div class="visual"><svg viewBox="0 0 560 220" role="img" aria-label="Diagrama de Venn de dos conjuntos"><circle cx="235" cy="105" r="78" fill="#b8d8ff" fill-opacity=".8" stroke="#2457a7" stroke-width="3"/><circle cx="325" cy="105" r="78" fill="#ffe0a0" fill-opacity=".75" stroke="#c58a18" stroke-width="3"/><text x="185" y="35" font-size="20" fill="#14213d">A</text><text x="365" y="35" font-size="20" fill="#14213d">B</text><text x="180" y="110" font-size="17" fill="#14213d">1, 2</text><text x="268" y="110" font-size="17" fill="#14213d">4, 5</text><text x="350" y="110" font-size="17" fill="#14213d">6, 7</text></svg></div>
+ <ul><li>Unión A ∪ B: elementos que pertenecen a A o a B.</li><li>Intersección A ∩ B: elementos comunes.</li><li>Diferencia A − B: elementos de A que no están en B.</li><li>Complemento: elementos del universo que no pertenecen al conjunto.</li></ul>
+ <div class="example"><b>Ejemplo resuelto.</b> Sean A = {1, 2, 3, 4, 5} y B = {4, 5, 6, 7, 8}. Entonces:<br>A ∪ B = <span class="answer">{1, 2, 3, 4, 5, 6, 7, 8}</span><br>A ∩ B = <span class="answer">{4, 5}</span>.</div>
+ <div class="exercise"><b>Practica.</b><ol><li>Determina el valor de verdad: “Todos los números pares son divisibles entre 2”.</li><li>Construye la tabla de verdad de ¬p ∧ q.</li><li>Si A = {2, 4, 6, 8} y B = {4, 8, 10, 12}, calcula A ∪ B.</li><li>Con los conjuntos anteriores, determina A ∩ B y A − B.</li><li>En un curso de 40 estudiantes, 25 practican fútbol, 18 baloncesto y 10 ambos. ¿Cuántos practican al menos uno?</li></ol></div>
+</section>
+
+<section class="topic" id="limites">
+ <div class="kicker">Matemáticas · Tema 4</div><h2>Límites</h2>
+ <p>El límite estudia el valor al que se aproxima una función cuando la variable independiente se acerca a un número. Se escribe lim<sub>x→a</sub> f(x) = L.</p>
+ <div class="visual"><svg viewBox="0 0 560 230" role="img" aria-label="Curva que se aproxima a un punto límite"><path d="M45 185 H520 M90 210 V20" stroke="#64748b" stroke-width="2"/><path d="M120 170 Q200 150 250 95 Q290 50 350 70 Q410 90 475 35" fill="none" stroke="#2457a7" stroke-width="4"/><path d="M290 185 V70 M90 70 H290" stroke="#d49b24" stroke-dasharray="6 5" stroke-width="2"/><circle cx="290" cy="70" r="7" fill="white" stroke="#2457a7" stroke-width="3"/><text x="300" y="58" fill="#14213d" font-size="15">L</text><text x="280" y="205" fill="#14213d" font-size="14">a</text></svg></div>
+ <h3>Propiedades</h3><div class="formula">lim [f(x) + g(x)] = lim f(x) + lim g(x)<br>lim [f(x) · g(x)] = (lim f(x))(lim g(x))<br>lim [f(x) / g(x)] = (lim f(x))/(lim g(x)), si el denominador no tiende a cero.</div>
+ <div class="example"><b>Ejemplo 1: sustitución directa.</b><br>lim<sub>x→2</sub> (x² + 3x + 1) = 2² + 3(2) + 1 = <span class="answer">11</span>.</div>
+ <div class="example"><b>Ejemplo 2: factorización.</b><br>lim<sub>x→3</sub> (x² − 9)/(x − 3). Factorizamos x² − 9 = (x − 3)(x + 3), simplificamos y evaluamos: lim<sub>x→3</sub>(x + 3) = <span class="answer">6</span>.</div>
+ <div class="exercise"><b>Practica.</b><ol><li>lim<sub>x→2</sub> (3x² + 2x − 1).</li><li>lim<sub>x→4</sub> (x² − 2x + 5).</li><li>lim<sub>x→2</sub> (x² − 4)/(x − 2).</li><li>lim<sub>x→5</sub> (x² − 25)/(x − 5).</li><li>lim<sub>x→0</sub> (3x² + 2x)/x.</li></ol></div>
+</section>
+
+<section class="topic" id="derivadas">
+ <div class="kicker">Matemáticas · Tema 5</div><h2>Derivadas</h2>
+ <p>La derivada representa la tasa de cambio instantánea de una función. Geométricamente, es la pendiente de la recta tangente a la curva en un punto. Se utiliza para estudiar velocidad instantánea, crecimiento, decrecimiento, máximos y mínimos.</p>
+ <div class="visual"><svg viewBox="0 0 560 230" role="img" aria-label="Curva y recta tangente"><path d="M45 185 H520 M90 210 V20" stroke="#64748b" stroke-width="2"/><path d="M100 165 Q180 30 270 95 T480 40" fill="none" stroke="#2457a7" stroke-width="4"/><path d="M175 145 L390 48" stroke="#d49b24" stroke-width="3"/><circle cx="285" cy="96" r="6" fill="#14213d"/><text x="397" y="43" fill="#a56b00" font-size="14">Tangente</text></svg></div>
+ <h3>Reglas básicas</h3><div class="formula">(c)' = 0<br>(x)' = 1<br>(xⁿ)' = n · xⁿ⁻¹<br>(c · f(x))' = c · f'(x)<br>(f(x) + g(x))' = f'(x) + g'(x)</div>
+ <p>Regla del producto: (uv)' = u'v + uv'.<br>Regla del cociente: (u/v)' = (u'v − uv')/v².</p>
+ <div class="example"><b>Ejemplo resuelto.</b> Deriva f(x) = 3x⁴ − 5x² + 7x − 9.<br>f'(x) = 3(4x³) − 5(2x) + 7.<br><span class="answer">f'(x) = 12x³ − 10x + 7.</span></div>
+ <div class="example"><b>Aplicación a la velocidad.</b> Si la posición es s(t) = t² + 4t, entonces v(t) = s'(t) = 2t + 4. En t = 3 s: v(3) = 10 m/s.</div>
+ <div class="exercise"><b>Practica.</b><ol><li>Calcula la derivada de f(x) = 5x³ + 2x² − 4x + 8.</li><li>Deriva f(x) = 7x⁵ − 3x² + 6.</li><li>Encuentra la derivada de f(x) = (1/2)x⁴ + 3x.</li><li>Si s(t) = 3t² + 5t + 2, determina la función velocidad.</li><li>Encuentra los puntos críticos de f(x) = x² − 6x + 8, igualando su primera derivada a cero.</li></ol></div>
+</section>
+
+<section class="topic" id="estadistica">
+ <div class="kicker">Matemáticas · Tema 6</div><h2>Estadística básica</h2>
+ <p>La estadística permite recolectar, organizar, analizar e interpretar datos. La <b>población</b> es el conjunto total de interés; la <b>muestra</b> es una parte de esa población; una <b>variable</b> es la característica estudiada y la <b>frecuencia</b> indica cuántas veces aparece un dato.</p>
+ <div class="visual"><svg viewBox="0 0 560 220" role="img" aria-label="Gráfico de barras estadístico"><path d="M55 185 H515 M75 195 V25" stroke="#64748b" stroke-width="2"/><rect x="115" y="105" width="55" height="80" fill="#2457a7" rx="5"/><rect x="210" y="65" width="55" height="120" fill="#347cb7" rx="5"/><rect x="305" y="90" width="55" height="95" fill="#d49b24" rx="5"/><rect x="400" y="40" width="55" height="145" fill="#17834a" rx="5"/><text x="126" y="207" font-size="13" fill="#14213d">A</text><text x="221" y="207" font-size="13" fill="#14213d">B</text><text x="316" y="207" font-size="13" fill="#14213d">C</text><text x="411" y="207" font-size="13" fill="#14213d">D</text></svg></div>
+ <h3>Medidas de tendencia central</h3><div class="formula">Media: x̄ = (suma de todos los datos) / n<br>Mediana: valor central de los datos ordenados (o promedio de los dos centrales).<br>Moda: dato que aparece con mayor frecuencia.</div>
+ <h3>Medidas de dispersión</h3><div class="formula">Rango = valor máximo − valor mínimo<br>Varianza poblacional: σ² = Σ(xᵢ − μ)² / N<br>Desviación estándar: σ = √σ²</div>
+ <div class="example"><b>Ejemplo resuelto.</b> Calificaciones: 3, 4, 4, 5, 4.<ul><li>Media: (3 + 4 + 4 + 5 + 4)/5 = 20/5 = <b>4</b>.</li><li>Mediana: al ordenar 3, 4, 4, 4, 5, el valor central es <b>4</b>.</li><li>Moda: <b>4</b>.</li><li>Rango: 5 − 3 = <b>2</b>.</li></ul></div>
+ <div class="exercise"><b>Practica.</b><ol><li>Calcula la media de 5, 7, 8, 6, 9.</li><li>Encuentra la mediana de 12, 8, 15, 10, 20, 14, 11.</li><li>Determina la moda de 2, 3, 3, 4, 5, 3, 6, 4.</li><li>Calcula el rango de 18, 25, 12, 30, 22, 16.</li><li>Las notas son 2, 3, 3, 4, 4 y 5. Calcula media, mediana, moda y varianza poblacional.</li></ol></div>
+</section>
+
+<section class="topic" id="movimiento">
+ <div class="kicker">Física · Tema 7</div><h2>Movimiento</h2>
+ <p>Un cuerpo está en movimiento cuando cambia su posición respecto a un sistema de referencia. La trayectoria es el camino recorrido; la distancia es la longitud total del trayecto; el desplazamiento es el cambio entre posición inicial y final. La rapidez relaciona distancia y tiempo; la velocidad relaciona desplazamiento y tiempo; la aceleración mide el cambio de velocidad.</p>
+ <div class="visual"><svg viewBox="0 0 560 180" role="img" aria-label="Vehículo en movimiento con vector de velocidad"><path d="M35 140 H525" stroke="#64748b" stroke-width="4"/><rect x="135" y="82" width="130" height="48" rx="12" fill="#2457a7"/><path d="M165 82 L190 52 H240 L260 82" fill="#9ec9f0" stroke="#2457a7" stroke-width="3"/><circle cx="170" cy="137" r="15" fill="#14213d"/><circle cx="238" cy="137" r="15" fill="#14213d"/><path d="M285 72 H440 M425 58 L440 72 L425 86" fill="none" stroke="#d49b24" stroke-width="5"/><text x="330" y="55" fill="#a56b00" font-size="17">Velocidad</text></svg></div>
+ <h3>Movimiento rectilíneo uniforme (MRU)</h3><p>Se mueve en línea recta con velocidad constante y aceleración cero.</p><div class="formula">x = x₀ + vt &nbsp;&nbsp; y, si x₀ = 0: d = vt</div>
+ <h3>Movimiento rectilíneo uniformemente acelerado (MRUA)</h3><p>La aceleración es constante.</p><div class="formula">v_f = v₀ + at<br>x = x₀ + v₀t + ½at²<br>v_f² = v₀² + 2a(x − x₀)</div>
+ <div class="example"><b>Ejemplo MRU.</b> Un automóvil viaja a 20 m/s durante 10 s. d = vt = 20 × 10 = <span class="answer">200 m</span>.</div>
+ <div class="example"><b>Ejemplo MRUA.</b> Una motocicleta parte del reposo y acelera a 3 m/s² durante 4 s. v<sub>f</sub> = v₀ + at = 0 + 3 × 4 = <span class="answer">12 m/s</span>.</div>
+ <p>En una gráfica posición-tiempo, la pendiente representa velocidad. En velocidad-tiempo, la pendiente representa aceleración y el área bajo la curva representa desplazamiento.</p>
+ <div class="exercise"><b>Practica.</b><ol><li>Un ciclista se desplaza a 8 m/s durante 15 s. ¿Qué distancia recorre?</li><li>Un automóvil recorre 300 m en 20 s. Calcula su rapidez media.</li><li>Un objeto parte del reposo y acelera a 5 m/s² durante 6 s. Calcula su velocidad final.</li><li>Un vehículo tiene velocidad inicial de 10 m/s y acelera a 2 m/s² durante 5 s. ¿Qué distancia recorre?</li><li>Un automóvil se desplaza a 25 m/s y frena uniformemente hasta detenerse en 5 s. Calcula su aceleración.</li></ol></div>
+</section>
+
+<section class="topic" id="newton">
+ <div class="kicker">Física · Tema 8</div><h2>Leyes de Newton</h2>
+ <p>Las tres leyes de Newton explican cómo se relacionan las fuerzas con el movimiento de los cuerpos.</p>
+ <h3>Primera ley: inercia</h3><p>Un cuerpo permanece en reposo o en movimiento rectilíneo uniforme si la fuerza neta sobre él es cero. Ejemplo: al frenar un autobús, los pasajeros tienden a continuar su movimiento.</p>
+ <h3>Segunda ley: dinámica</h3><div class="formula">F<sub>neta</sub> = m · a</div><p>La aceleración depende de la fuerza neta y de la masa. La fuerza se mide en newtons (N), la masa en kg y la aceleración en m/s².</p>
+ <h3>Tercera ley: acción y reacción</h3><p>Si un cuerpo ejerce una fuerza sobre otro, el segundo ejerce sobre el primero una fuerza de igual magnitud y dirección opuesta. Ejemplo: al caminar, el pie empuja el suelo hacia atrás y el suelo empuja el pie hacia adelante.</p>
+ <h3>Otras fuerzas</h3><table><tr><th>Fuerza</th><th>Descripción</th></tr><tr><td>Peso</td><td>Atracción gravitacional: P = mg.</td></tr><tr><td>Normal</td><td>Fuerza perpendicular que ejerce una superficie.</td></tr><tr><td>Fricción</td><td>Se opone al movimiento relativo entre superficies.</td></tr><tr><td>Tensión</td><td>Fuerza transmitida por una cuerda.</td></tr><tr><td>Elástica</td><td>Fuerza ejercida por un resorte deformado.</td></tr></table>
+ <div class="example"><b>Ejemplo resuelto.</b> Una caja de 10 kg recibe una fuerza horizontal neta de 50 N. a = F/m = 50/10 = <span class="answer">5 m/s²</span>.</div>
+ <div class="exercise"><b>Practica.</b><ol><li>Un objeto de 5 kg experimenta una fuerza neta de 20 N. Calcula su aceleración.</li><li>Calcula el peso de una persona de 60 kg en la Tierra, con g = 9,8 m/s².</li><li>Un automóvil de 1.000 kg acelera a 2 m/s². ¿Cuál es la fuerza neta?</li><li>Explica mediante un ejemplo cotidiano la primera ley de Newton.</li><li>Un objeto de 8 kg recibe 60 N hacia la derecha y 20 N hacia la izquierda. Calcula la fuerza neta y su aceleración.</li></ol></div>
+</section>
+
+<section class="topic" id="mas">
+ <div class="kicker">Física · Tema 9</div><h2>Movimiento armónico simple (MAS)</h2>
+ <p>Es un movimiento oscilatorio y periódico alrededor de una posición de equilibrio. La fuerza restauradora es proporcional al desplazamiento y está dirigida hacia el equilibrio. Ejemplos: masa unida a un resorte, péndulo simple con pequeñas oscilaciones y ciertas vibraciones mecánicas.</p>
+ <div class="visual"><svg viewBox="0 0 560 230" role="img" aria-label="Masa unida a un resorte oscilando"><path d="M70 35 V190" stroke="#14213d" stroke-width="7"/><path d="M70 110 L100 110 L115 85 L140 135 L165 85 L190 135 L215 85 L240 110" fill="none" stroke="#2457a7" stroke-width="4"/><rect x="240" y="83" width="75" height="55" rx="9" fill="#d49b24"/><path d="M335 110 H470 M455 95 L470 110 L455 125" stroke="#17834a" stroke-width="3" fill="none"/><text x="345" y="88" fill="#17834a" font-size="15">Oscilación</text><path d="M325 65 V165" stroke="#64748b" stroke-dasharray="5 5" stroke-width="2"/><text x="330" y="185" fill="#14213d" font-size="13">Equilibrio</text></svg></div>
+ <h3>Elementos y fórmulas</h3><ul><li>Amplitud (A): máximo desplazamiento desde el equilibrio.</li><li>Período (T): tiempo de una oscilación.</li><li>Frecuencia (f): oscilaciones por segundo.</li><li>Elongación (x): desplazamiento respecto al equilibrio.</li><li>Frecuencia angular (ω): rapidez angular de la oscilación.</li></ul>
+ <div class="formula">f = 1/T &nbsp;&nbsp; ω = 2πf = 2π/T<br>x(t) = A cos(ωt + φ)<br>Resorte: T = 2π√(m/k)<br>Péndulo simple: T = 2π√(L/g), para pequeñas oscilaciones.</div>
+ <div class="example"><b>Ejemplo resuelto.</b> Un sistema realiza 20 oscilaciones en 10 s. f = 20/10 = 2 Hz. El período es T = 1/f = <span class="answer">0,5 s</span>.</div>
+ <div class="exercise"><b>Practica.</b><ol><li>Un péndulo realiza 30 oscilaciones en 15 s. Calcula frecuencia y período.</li><li>Un objeto unido a un resorte tiene frecuencia de 4 Hz. Calcula su período.</li><li>Un sistema tiene período de 2 s. Determina su frecuencia angular.</li><li>Un péndulo simple tiene longitud de 1 m. Calcula aproximadamente su período con g = 9,8 m/s².</li><li>Un resorte tiene constante elástica de 200 N/m y está unido a una masa de 2 kg. Calcula el período.</li></ol></div>
+</section>
+
+<section class="topic" id="termo">
+ <div class="kicker">Física · Tema 10</div><h2>Termodinámica</h2>
+ <p>La termodinámica estudia el calor, la temperatura, la energía y sus transformaciones. La temperatura caracteriza el estado térmico; el calor es energía transferida por diferencia de temperatura; la energía interna corresponde a la energía microscópica del sistema y el trabajo es una forma de transferencia de energía.</p>
+ <h3>Escalas de temperatura</h3><div class="formula">K = °C + 273,15<br>°F = (9/5) · °C + 32</div>
+ <h3>Transferencia de calor</h3><div class="visual"><svg viewBox="0 0 560 190" role="img" aria-label="Tres mecanismos de transferencia de calor"><g transform="translate(20 10)"><rect x="15" y="60" width="135" height="80" rx="8" fill="#dceeff" stroke="#2457a7" stroke-width="2"/><path d="M35 80 H125" stroke="#d49b24" stroke-width="7"/><text x="32" y="165" font-size="15" fill="#14213d">Conducción</text><text x="34" y="48" font-size="12" fill="#2457a7">Contacto</text></g><g transform="translate(205 10)"><path d="M20 135 Q10 65 80 65 Q150 65 140 135 Z" fill="#dceeff" stroke="#2457a7" stroke-width="2"/><path d="M55 120 Q30 85 65 78 M105 120 Q135 85 100 78" fill="none" stroke="#d49b24" stroke-width="4"/><text x="38" y="165" font-size="15" fill="#14213d">Convección</text><text x="43" y="48" font-size="12" fill="#2457a7">Fluidos</text></g><g transform="translate(390 10)"><circle cx="70" cy="95" r="30" fill="#f2b84b"/><path d="M70 20 V48 M70 142 V170 M0 95 H35 M105 95 H140 M20 45 L42 67 M98 123 L120 145 M20 145 L42 123 M98 67 L120 45" stroke="#d49b24" stroke-width="4"/><text x="39" y="185" font-size="15" fill="#14213d">Radiación</text></g></svg></div>
+ <ul><li><b>Conducción:</b> transferencia mediante contacto directo.</li><li><b>Convección:</b> transferencia por movimiento de líquidos o gases.</li><li><b>Radiación:</b> transferencia mediante ondas electromagnéticas.</li></ul>
+ <h3>Calor y capacidad calorífica</h3><div class="formula">Q = m · c · ΔT</div><p>Q es el calor transferido (J), m la masa (kg), c el calor específico (J/(kg·°C)) y ΔT el cambio de temperatura.</p>
+ <h3>Primera ley de la termodinámica</h3><div class="formula">ΔU = Q − W</div><p>Con esta convención, Q es positivo cuando el sistema recibe calor y W es positivo cuando el sistema realiza trabajo.</p>
+ <div class="example"><b>Ejemplo resuelto.</b> ¿Cuánto calor necesita recibir 2 kg de agua para aumentar de 20 °C a 30 °C? Usa c = 4186 J/(kg·°C).<br>ΔT = 30 − 20 = 10 °C.<br>Q = 2 × 4186 × 10 = <span class="answer">83.720 J</span>, suponiendo que no hay pérdidas de calor.</div>
+ <div class="exercise"><b>Practica.</b><ol><li>Convierte 25 °C a Kelvin.</li><li>Convierte 86 °F a grados Celsius.</li><li>¿Cuánto calor necesita 3 kg de un material con c = 500 J/(kg·°C) para aumentar de 20 °C a 40 °C?</li><li>Explica la diferencia entre conducción, convección y radiación, con un ejemplo de cada una.</li><li>Un sistema recibe 500 J de calor y realiza un trabajo de 200 J. Calcula su cambio de energía interna.</li></ol></div>
+</section>
+
+<section class="activity" id="interactiva">
+ <div class="kicker">Comprueba lo aprendido</div><h2>Actividad interactiva · Desafío matemático</h2>
+ <p>Selecciona una respuesta en cada pregunta y pulsa “Calificar”. Recibirás retroalimentación inmediata.</p>
+ <div id="quiz"></div><button id="grade">Calificar respuestas</button> <button class="secondary" id="reset">Volver a intentar</button><div id="quiz-result" aria-live="polite"></div>
+</section>
+
+<section class="activity" id="laboratorio">
+ <div class="kicker">Explora y experimenta</div><h2>Laboratorio virtual de Física y Matemáticas</h2>
+ <p>Utiliza simulaciones para observar fenómenos, modificar variables y contrastar tus predicciones.</p>
+ <div class="exercise"><b>Experimento A · Movimiento</b><ol><li>Abre la simulación de movimiento.</li><li>Observa la posición y la velocidad.</li><li>Registra la distancia en distintos intervalos.</li><li>Construye una gráfica posición-tiempo.</li><li>Explica qué representa su pendiente.</li></ol><a href="https://phet.colorado.edu/es/simulations/filter?subjects=physics&type=html" target="_blank" rel="noopener">Explorar simulaciones de Física en PhET ↗</a></div>
+ <div class="exercise"><b>Experimento B · Leyes de Newton</b><ol><li>Modifica la fuerza aplicada a un objeto.</li><li>Observa qué ocurre al cambiar su masa.</li><li>Compara los resultados y explica la relación entre fuerza, masa y aceleración.</li></ol><a href="https://phet.colorado.edu/es/simulations/forces-and-motion-basics" target="_blank" rel="noopener">Abrir Fuerzas y movimiento: Fundamentos ↗</a></div>
+ <div class="exercise"><b>Experimento C · Movimiento armónico simple</b><ol><li>Explora un sistema masa-resorte.</li><li>Observa sus oscilaciones.</li><li>Modifica la masa y compara los períodos.</li><li>Explica cómo influye la masa en el movimiento.</li></ol><a href="https://phet.colorado.edu/es/simulations/masses-and-springs" target="_blank" rel="noopener">Explorar Masas y resortes ↗</a></div>
+ <div class="exercise"><b>Experimento D · Termodinámica</b><ol><li>Explora una simulación de transferencia de energía térmica.</li><li>Observa cómo cambia la temperatura.</li><li>Identifica los mecanismos de transferencia de calor.</li><li>Describe una situación cotidiana para cada mecanismo.</li></ol><a href="https://phet.colorado.edu/es/" target="_blank" rel="noopener">Buscar simulaciones en PhET ↗</a></div>
+ <div class="exercise"><b>Herramienta matemática · GeoGebra</b><p>Representa funciones, explora gráficas y comprueba resultados.</p><a href="https://www.geogebra.org/" target="_blank" rel="noopener">Abrir GeoGebra ↗</a></div>
+</section>
+
+<section class="activity" id="integradores">
+ <div class="kicker">Aplicación de conocimientos</div><h2>Retos integradores</h2>
+ <div class="exercise"><b>Reto 1 · Trigonometría: la altura del árbol.</b><p>Un estudiante está a 15 m de un árbol y observa su parte superior con un ángulo de elevación de 60°. ¿Cuál es la altura aproximada? Supón que el instrumento está a nivel del suelo. Pista: utiliza tangente.</p></div>
+ <div class="exercise"><b>Reto 2 · Funciones y movimiento: el recorrido del ciclista.</b><p>La posición de un ciclista está dada por s(t) = 5t + 10.</p><ol><li>¿Cuál es su posición inicial?</li><li>¿Dónde estará después de 8 segundos?</li><li>¿Cuál es su velocidad?</li></ol></div>
+ <div class="exercise"><b>Reto 3 · Derivadas: producción de una fábrica.</b><p>P(t) = t³ − 6t² + 9t + 20.</p><ol><li>Calcula la derivada.</li><li>Determina la tasa de cambio cuando t = 2.</li><li>Interpreta el resultado.</li></ol></div>
+ <div class="exercise"><b>Reto 4 · Newton: transporte de mercancías.</b><p>Un vehículo de carga de 2.000 kg experimenta una fuerza neta de 4.000 N.</p><ol><li>Calcula su aceleración.</li><li>¿Qué sucedería con la aceleración si la masa se duplicara y la fuerza permaneciera constante?</li></ol></div>
+ <div class="exercise"><b>Reto 5 · Estadística y termodinámica: análisis de temperaturas.</b><p>Durante cinco días se registraron 20 °C, 22 °C, 24 °C, 22 °C y 27 °C.</p><ol><li>Calcula la media.</li><li>Encuentra la mediana y la moda.</li><li>Calcula el rango.</li><li>Convierte la temperatura promedio a Kelvin.</li></ol></div>
+</section>
+
+<section class="checkpanel" id="autoevaluacion">
+ <div class="kicker">Cierre</div><h2>Autoevaluación de competencias</h2>
+ <p>Marca cada competencia cuando puedas desarrollarla sin consultar los ejemplos.</p>
+ <div class="progress"><span id="bar"></span></div><p id="progress-label" class="note">0 de 10 competencias alcanzadas · 0%</p>
+ <div id="checks"></div>
+ <p class="note">La lista se guarda únicamente mientras esta página permanezca abierta. Si recargas, podrás marcarla de nuevo.</p>
+</section>
+
+<section class="intro">
+ <h2>Plan sugerido de estudio</h2>
+ <table><tr><th>Sesión</th><th>Temas</th></tr><tr><td>1</td><td>Trigonometría y movimiento</td></tr><tr><td>2</td><td>Funciones y leyes de Newton</td></tr><tr><td>3</td><td>Lógica, conjuntos y MAS</td></tr><tr><td>4</td><td>Límites y termodinámica</td></tr><tr><td>5</td><td>Derivadas y estadística</td></tr><tr><td>6</td><td>Repaso general y simulacro</td></tr></table>
+ <p><b>Recomendación:</b> estudia un tema de Matemáticas y uno de Física por sesión. Resuelve los ejercicios, revisa los procedimientos y explica con tus palabras lo que aprendiste.</p>
+</section>
+</main>
+</div>
+<footer>Guía de repaso de Matemáticas y Física · Grados 10.º y 11.º<br>Material educativo para preparación de la evaluación final.</footer>
+<script>
+const questions=[
+ {q:"¿Cuál es el valor de sen(30°)?",o:["1","1/2","√3/2"],a:1,e:"El seno de 30° es 1/2."},
+ {q:"¿Cuál es la derivada de x³?",o:["3x²","x²","3x"],a:0,e:"Se multiplica por el exponente y se resta una unidad al exponente."},
+ {q:"¿Cuánto vale el límite de x + 4 cuando x tiende a 2?",o:["4","6","8"],a:1,e:"Por sustitución directa: 2 + 4 = 6."},
+ {q:"¿Cuál es la intersección de A={1,2,3} y B={2,3,4}?",o:["{1,4}","{1,2,3,4}","{2,3}"],a:2,e:"La intersección contiene los elementos comunes a ambos conjuntos."},
+ {q:"¿Cuál es la media de 2, 4 y 6?",o:["3","4","5"],a:1,e:"(2 + 4 + 6) / 3 = 4."}
+];
+const quiz=document.getElementById("quiz");
+function renderQuiz(){quiz.innerHTML=questions.map((q,i)=>`<div class="quiz-q"><b>${i+1}. ${q.q}</b>${q.o.map((v,j)=>`<label><input type="radio" name="q${i}" value="${j}"> ${v}</label>`).join("")}<div id="feedback${i}"></div></div>`).join("");document.getElementById("quiz-result").innerHTML="";}
+document.getElementById("grade").addEventListener("click",()=>{
+ let score=0,answered=0;
+ questions.forEach((q,i)=>{const selected=quiz.querySelector(`input[name="q${i}"]:checked`);const box=document.getElementById(`feedback${i}`);if(!selected){box.innerHTML='<div class="feedback wrong">Pendiente: selecciona una respuesta.</div>';return;}answered++;const ok=Number(selected.value)===q.a;if(ok)score++;box.innerHTML=`<div class="feedback ${ok?"":"wrong"}">${ok?"¡Correcto!":"Respuesta correcta: "+q.o[q.a]+". "} ${q.e}</div>`;});
+ document.getElementById("quiz-result").innerHTML=`<h3>Resultado: ${score} de 5</h3><p>Respondiste ${answered} de 5 preguntas.</p>`;
+});
+document.getElementById("reset").addEventListener("click",renderQuiz);renderQuiz();
+const skills=["Identifico las razones trigonométricas y aplico el teorema de Pitágoras.","Reconozco tipos de funciones e interpreto sus gráficas.","Resuelvo proposiciones lógicas y operaciones entre conjuntos.","Calculo límites mediante sustitución y factorización.","Aplico las reglas fundamentales de derivación.","Calculo e interpreto medidas estadísticas.","Resuelvo problemas de MRU y MRUA.","Identifico y aplico las tres leyes de Newton.","Reconozco las características y ecuaciones del MAS.","Resuelvo problemas de calor y primera ley de la termodinámica."];
+const checks=document.getElementById("checks");
+checks.innerHTML=skills.map((s,i)=>`<label class="checkrow"><input type="checkbox" class="skill"> <span>${s}</span></label>`).join("");
+function updateProgress(){const n=checks.querySelectorAll("input:checked").length;document.getElementById("bar").style.width=(n*10)+"%";document.getElementById("progress-label").textContent=`${n} de 10 competencias alcanzadas · ${n*10}%`;}
+checks.addEventListener("change",updateProgress);
+</script>
+</body>
+</html>
